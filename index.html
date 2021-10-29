@@ -6,6 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- Google Fonts Links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Gilda+Display&family=Gruppo&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,100&display=swap"
+        rel="stylesheet">
+    <!-- JavaScript Library Link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
     <link rel='stylesheet'
         href='https://fonts.googleapis.com/css?family=Open+Sans%3A400%2C400italic%2C600%2C700%2C700italic%7COswald%3A400%2C300%7CVollkorn%3A400%2C400italic'>
@@ -16,24 +23,36 @@
 </head>
 
 <body>
-    <div class="menu-wrap">
-        <input type="checkbox" class="toggler">
-        <div class="hamburger">
-            <div></div>
-        </div>
-        <div class="menu">
-            <div>
-                <div>
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
+    <header>
+        <div class="nav-bar">
+            <div class="menu-wrap">
+                <input type="checkbox" class="toggler">
+                <div class="hamburger">
+                    <div></div>
+                </div>
+                <div class="menu">
+                    <div>
+                        <div>
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Our Moods</a></li>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
+            <div class="logo">
+                <img src="./images/bubblylogosmall.png" alt="bubblylogo">
+            </div>
+            <div class="icons">
+                <img src="./images/heart.png" alt="hearticon">
+                <img src="./images/position.png" alt="positionicon">
+                <img src="./images/shoppingcar.png" alt="caricon">
+            </div>
         </div>
-    </div>
+    </header>
     <main class="main-content">
         <section class="slideshow">
             <div class="slideshow-inner">
@@ -51,8 +70,7 @@
                             </div>
                         </div>
                         <div class="image-container">
-                            <img src="https://www.alixbdanthenay.fr/wp-content/uploads/2015/07/Indispensable-1.jpg"
-                                alt="" class="image" />
+                            <img src="./images/banner1.jpg" alt="banner1image" class="image">
                         </div>
                     </div>
                     <div class="slide">
@@ -68,8 +86,7 @@
                             </div>
                         </div>
                         <div class="image-container">
-                            <img src="https://www.alixbdanthenay.fr/wp-content/uploads/2015/07/Indispensable-4-1.jpg"
-                                alt="" class="image" />
+                            <img src="./images/banner2.jpeg" alt="banner2image" class="image">
                         </div>
                     </div>
                     <div class="slide">
@@ -85,6 +102,7 @@
                             </div>
                         </div>
                         <div class="image-container">
+                            <img src="./images/banner3.jpeg" alt="banner3image" class="image">
                             <img src="https://www.alixbdanthenay.fr/wp-content/uploads/2016/11/11.jpg" alt=""
                                 class="image" />
                         </div>
@@ -102,8 +120,7 @@
                             </div>
                         </div>
                         <div class="image-container">
-                            <img src="https://www.alixbdanthenay.fr/wp-content/uploads/2016/11/20mars17-sans-typo.jpg"
-                                alt="" class="image" />
+                            <img src="./images/banner4.jpeg" alt="banner4image" class="image">
                         </div>
                     </div>
                 </div>
@@ -146,6 +163,36 @@
                     </div>
                 </div>
             </div>
+        </section>
+        <section class="our-moods">
+            <h2>Our MOODS</h2>
+            <div>
+                <img src="./images/divorceparty.jpg" alt="divorceparty">
+                <h3>DIVORCE PARTY</h3>
+            </div>
+            <div>
+                <img src="./images/babyshower.jpg" alt="babyshower">
+                <h3>EXCITED BABY SHOWER</h3>
+            </div>
+            <div>
+                <img src="./images/byebyebelly.jpg" alt="byebyebelly">
+                <h3>BYE BYE BELLY</h3>
+            </div>
+        </section>
+        <section class="services">
+            <div class="icecream1">
+                <img src="./images/customize.jpg" alt="customizeyourmood">
+                <div class="customize-content">
+                    <h4>customize your</h4>
+                    <h5>MOOD</h5>
+                    <p>Make your own choice and BE HAPPY!</p>
+                    <button type="submit" class="btn-light">ORDER</button>
+
+                </div>
+
+
+            </div>
+
         </section>
     </main>
     <!-- partial -->
