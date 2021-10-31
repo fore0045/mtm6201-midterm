@@ -146,7 +146,7 @@ html {
 }
 
 body {
-    line-height: 1.5;
+    line-height: 1;
 }
 
 *,
@@ -169,4 +169,314 @@ a:visited {
     color: inherit;
 }
 
-/* Navigation List Styles */
+/* LoVe HAte seudoclasses added Link, visited, Hover, Action Always styling the navigation*/
+.nav-list a,
+.nav-list a:link,
+.nav-list a:visited {
+    display: block;
+    padding: 1em 0;
+    text-decoration: none;
+}
+
+/* Navigation Bar Styles */
+
+.main-nav {
+    background-color: var(--primary-color);
+    background-size: cover;
+}
+
+.nav-list {
+    display: flex;
+    max-width: 1600px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.nav-list li {
+    flex: 1;
+}
+
+.logo img {
+    max-width: 200px;
+}
+
+.im {
+    color: #3CA670;
+    /* font-size: 3em; */
+}
+
+.icons button {
+    background: none;
+    border: none;
+}
+
+.our-moods {
+    padding: 1em;
+}
+
+.our-moods h2 {
+    font-family: 'Gruppo',
+        cursive;
+    font-size: 3em;
+    color: #93278F;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    text-align: center;
+}
+
+.our-moods img {
+    width: 100%;
+}
+
+.our-moods h3 {
+    font-family: 'Gruppo',
+        cursive;
+    font-size: 2em;
+    color: grey;
+    padding-top: .5em;
+    padding-bottom: 2.5em;
+    text-align: center;
+}
+
+.services {
+    padding: 1em;
+}
+
+.icecream1 img {
+    width: 100%;
+    position: absolute;
+    min-height: 100%;
+    object-fit: cover;
+}
+
+/* .icecream2 img {
+    position: absolute;
+} */
+
+.customize-content {
+    position: relative;
+    padding-top: 7em;
+}
+
+.customize-content h4 {
+    font: 400 40px 'Gilda Display',
+        serif;
+    margin-top: -.3em;
+    color: #3CA670;
+    text-align: center;
+}
+
+.customize-content h5 {
+    font-family: 'Gruppo',
+        cursive;
+    font-size: 3.5em;
+    margin-top: -.2em;
+    color: #93278F;
+    text-align: center;
+}
+
+.customize-content p {
+    font: 300 15px 'Poppins',
+        sans-serif;
+    text-align: center;
+    color: grey;
+}
+
+.btn-light {
+    /* display: inline-block; */
+    padding: 10px 15px;
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+    background: rgba(242, 99, 192, 0.5);
+    font-family: 'Poppins',
+        sans-serif;
+    letter-spacing: 0.4em;
+    text-align: center;
+    text-indent: 2px;
+    font-size: 1em;
+    align-items: center;
+    border: 2px rgba(255, 255, 255, 0.5);
+}
+
+.icecream3 img {
+    width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    position: absolute;
+
+}
+
+.plan-party {
+    position: relative;
+    padding-top: 9em;
+}
+
+.plan-party h4 {
+    font: 400 40px 'Gilda Display',
+        serif;
+    margin-top: -.3em;
+    color: #F4EECE;
+    text-align: center;
+}
+
+.plan-party h5 {
+    font-family: 'Gruppo',
+        cursive;
+    font-size: 3.5em;
+    margin-top: -.2em;
+    color: #F2ACDA;
+    text-align: center;
+}
+
+.plan-party p {
+    font: 300 15px 'Poppins',
+        sans-serif;
+    text-align: center;
+    color: white;
+}
+
+.services img {
+    width: 100%;
+}
+
+.site-footer {
+    background-color: #EDFDE1;
+    color: #A64484;
+    font-family: 'Poppins',
+        sans-serif;
+    font-size: 1em;
+
+
+}
+
+.footer {
+    display: flex;
+}
+
+.socialmediaicons {
+    flex-grow: 2;
+    align-content: center;
+}
+
+/* About Us Styles */
+
+.banner {
+    height: 300px;
+    background: url(../images/aboutusbanner.png) no-repeat center center;
+    background-size: cover;
+}
+
+h1 {
+    background: #3CA670;
+    font: 500 50px 'Gilda Display',
+        serif;
+    color: white;
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+/* -------------------------------------------------------- */
+/*------------------------DESKTOP STYLES------------------- */
+/* -------------------------------------------------------- */
+
+@media screen and (min-width: 760px) {
+
+    .our-moods h2 {
+        font-size: 4em;
+    }
+
+    .our-moods h3 {
+        font-size: 3em;
+    }
+
+    .our-moods-info {
+        max-width: 1400px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, auto);
+        grid-template-areas:
+            "one one one"
+            "two three four";
+        gap: 6em;
+    }
+
+    .our-moods-info h2 {
+        grid-area: one;
+    }
+
+    .divorce {
+        grid-area: two;
+    }
+
+    .babyshower {
+        grid-area: three;
+    }
+
+    .belly {
+        grid-area: four;
+    }
+
+    .customize-content h4 {
+        font: 400 50px 'Gilda Display',
+            serif;
+    }
+
+    .customize-content h5 {
+        font-size: 4.5em;
+
+    }
+
+    .customize-content p {
+        font: 300 20px 'Poppins',
+            sans-serif;
+    }
+
+    .plan-party h4 {
+        font: 400 50px 'Gilda Display',
+            serif;
+    }
+
+    .plan-party h5 {
+        font-size: 4.5em;
+    }
+
+    .plan-party p {
+        font: 300 20px 'Poppins',
+            sans-serif;
+    }
+
+    .btn-light {
+        padding: 13px 20px;
+        font-size: 1.2em;
+    }
+
+    /* .services {
+        margin: 0 auto;
+        width: auto;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas:
+            "five five six seven seven"
+            "five five eight seven seven";
+    }
+
+    .icecream1 {
+        grid-area: five;
+    }
+
+    .icecream2 {
+        grid-area: six;
+    }
+
+    .icecream4 {
+        grid-area: seven;
+    }
+
+    .icecream3 {
+        grid-area: seven;
+    } */
+}

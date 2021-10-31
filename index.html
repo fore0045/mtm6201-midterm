@@ -18,40 +18,51 @@
         href='https://fonts.googleapis.com/css?family=Open+Sans%3A400%2C400italic%2C600%2C700%2C700italic%7COswald%3A400%2C300%7CVollkorn%3A400%2C400italic'>
     <link rel="stylesheet" href="./css/slideshow.css">
     <link rel="stylesheet" href="./css/navstyle.css">
-
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="https://cdn.iconmonstr.com/1.3.0/css/iconmonstr-iconic-font.min.css">
 
 </head>
 
 <body>
     <header>
-        <div class="nav-bar">
-            <div class="menu-wrap">
-                <input type="checkbox" class="toggler">
-                <div class="hamburger">
-                    <div></div>
-                </div>
-                <div class="menu">
-                    <div>
-                        <div>
-                            <ul>
-                                <li><a href="#">Home</a></li>
-                                <li><a href="#">Our Moods</a></li>
-                                <li><a href="#">About Us</a></li>
-                                <li><a href="#">Contact</a></li>
-                            </ul>
+        <nav class="main-nav">
+            <ul class="nav-list">
+                <li>
+                    <div class="menu-wrap">
+                        <input type="checkbox" class="toggler">
+                        <div class="hamburger">
+                            <div></div>
+                        </div>
+                        <div class="menu">
+                            <div>
+                                <div>
+                                    <ul>
+                                        <li><a href="#">Home</a></li>
+                                        <li><a href="#">Our Moods</a></li>
+                                        <li><a href="#">About Us</a></li>
+                                        <li><a href="#">Contact</a></li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="logo">
-                <img src="./images/bubblylogosmall.png" alt="bubblylogo">
-            </div>
-            <div class="icons">
-                <img src="./images/heart.png" alt="hearticon">
-                <img src="./images/position.png" alt="positionicon">
-                <img src="./images/shoppingcar.png" alt="caricon">
-            </div>
-        </div>
+                </li>
+                <li class="logo"><a href="index.html">
+                        <img src="./images/bubblylogosmall.png" alt="bubblylogo"></a>
+                </li>
+                <li>
+                    <div class="icons">
+                        <button type="Submit"><i class="im im-heart"></i></button>
+                        <button type="Submit"><i class="im im-location"></i></button>
+
+                        <button type="Submit"><i class="im im-shopping-cart"></i></button>
+                        <!-- <img src="./images/heart.png" alt="hearticon">
+                        <img src="./images/position.png" alt="positionicon">
+                        <img src="./images/shoppingcar.png" alt="caricon"> -->
+                    </div>
+                </li>
+            </ul>
+        </nav>
     </header>
     <main class="main-content">
         <section class="slideshow">
@@ -60,12 +71,17 @@
                     <div class="slide is-active ">
                         <div class="slide-content">
                             <div class="caption">
-                                <div class="title">Slide title 1</div>
+                                <div class="title">
+                                    <p>A flavour for every</p>
+                                    <p>MOOD</p>
+                                </div>
+
                                 <div class="text">
-                                    <p>Slide description 1</p>
+                                    <p>Enjoy while taking care of yourself and your loved ones</p>
+
                                 </div>
                                 <a href="#" class="btn">
-                                    <span class="btn-inner">Learn More</span>
+                                    <span class="btn-inner">Our Moods</span>
                                 </a>
                             </div>
                         </div>
@@ -76,9 +92,12 @@
                     <div class="slide">
                         <div class="slide-content">
                             <div class="caption">
-                                <div class="title">Slide title 2</div>
+                                <div class="title">
+                                    <p>Make every moment a special occasion to</p>
+                                    <p>LAUGH</p>
+                                </div>
                                 <div class="text">
-                                    <p>Slide description 2</p>
+                                    <p>We like to see you smile</p>
                                 </div>
                                 <a href="#" class="btn">
                                     <span class="btn-inner">Learn More</span>
@@ -92,12 +111,15 @@
                     <div class="slide">
                         <div class="slide-content">
                             <div class="caption">
-                                <div class="title">Slide title 3</div>
+                                <div class="title">
+                                    <p>Delicious options for everyone's</p>
+                                    <p>HEALTH</p>
+                                </div>
                                 <div class="text">
-                                    <p>Slide description 3</p>
+                                    <p>Made with fresh ingredients</p>
                                 </div>
                                 <a href="#" class="btn">
-                                    <span class="btn-inner">Learn More</span>
+                                    <span class="btn-inner">Healthy Moods</span>
                                 </a>
                             </div>
                         </div>
@@ -110,9 +132,12 @@
                     <div class="slide">
                         <div class="slide-content">
                             <div class="caption">
-                                <div class="title">Slide title 4</div>
+                                <div class="title">
+                                    <p>Perfect combinations for those with</p>
+                                    <p>SWEET TOOTH</p>
+                                </div>
                                 <div class="text">
-                                    <p>Slide description 4</p>
+                                    <p>Simply irresistible</p>
                                 </div>
                                 <a href="#" class="btn">
                                     <span class="btn-inner">Learn More</span>
@@ -165,33 +190,36 @@
             </div>
         </section>
         <section class="our-moods">
-            <h2>Our MOODS</h2>
-            <div>
-                <img src="./images/divorceparty.jpg" alt="divorceparty">
-                <h3>DIVORCE PARTY</h3>
-            </div>
-            <div>
-                <img src="./images/babyshower.jpg" alt="babyshower">
-                <h3>EXCITED BABY SHOWER</h3>
-            </div>
-            <div>
-                <img src="./images/byebyebelly.jpg" alt="byebyebelly">
-                <h3>BYE BYE BELLY</h3>
+            <div class="our-moods-info">
+                <h2>Our MOODS</h2>
+                <div class="divorce">
+                    <img src="./images/divorceparty.jpg" alt="divorceparty">
+                    <h3>DIVORCE PARTY</h3>
+                </div>
+                <div class="babyshower">
+                    <img src="./images/babyshower.jpg" alt="babyshower">
+                    <h3>EXCITED BABY SHOWER</h3>
+                </div>
+                <div class="belly">
+                    <img src="./images/byebyebelly.jpg" alt="byebyebelly">
+                    <h3>BYE BYE BELLY</h3>
+                </div>
             </div>
         </section>
         <section class="services">
             <div class="icecream1">
                 <img src="./images/icecream1.jpg" alt="customizeyourmood">
                 <div class="customize-content">
-                    <h4>customize your</h4>
+                    <h4>customize</h4>
+                    <h4>your</h4>
                     <h5>MOOD</h5>
                     <p>Make your own choice and BE HAPPY!</p>
                     <button type="submit" class="btn-light">ORDER</button>
                 </div>
             </div>
-            <img src="./images/icecream2.jpg" alt="vanillaicecream">
+            <img src="./images/icecream2.jpg" alt="vanillaicecream" class="icecream2">
             <div class="icecream3">
-                <img src="./images/icecream3.jpg" alt="customizeyourmood">
+                <img src="./images/icecream3.jpg" alt="planparty">
                 <div class="plan-party">
                     <h4>plan your</h4>
                     <h5>PARTY</h5>
@@ -200,7 +228,7 @@
                     <button type="submit" class="btn-light">ORDER</button>
                 </div>
             </div>
-            <img src="./images/icecream4.jpg" alt="strawberryicecream">
+            <img src="./images/icecream4.jpg" alt="strawberryicecream" class="icecream4">
         </section>
     </main>
     <footer class="site-footer">
