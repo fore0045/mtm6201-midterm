@@ -485,7 +485,8 @@ h1 {
 }
 
 .location iframe {
-    width: 100%
+    width: 100%;
+    border-radius: 5px 20px 5px;
 }
 
 .contact-us {
@@ -494,6 +495,7 @@ h1 {
 
 .find-us img {
     width: 100%;
+    border-radius: 5px 20px 5px;
 }
 
 .contact-form label {
@@ -756,7 +758,4 @@ h1 {
     .hours {
         grid-area: hours;
     }
-
-
-}
 }
