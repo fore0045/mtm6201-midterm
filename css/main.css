@@ -220,9 +220,13 @@ a:visited {
 }
 
 .our-moods h2 {
-    font-family: 'Gruppo',
-        cursive;
-    font-size: 3em;
+    /* font-family: 'Gruppo',
+        cursive;*/
+    font-size: 2.5em;
+    font-family: aviano-flare,
+        sans-serif;
+    font-weight: 400;
+    font-style: normal;
     color: #93278F;
     padding-top: 1em;
     padding-bottom: 1em;
@@ -234,9 +238,13 @@ a:visited {
 }
 
 .our-moods h3 {
-    font-family: 'Gruppo',
-        cursive;
-    font-size: 2em;
+    /* font-family: 'Gruppo',
+        cursive;*/
+    font-size: 1.5em;
+    font-family: aviano-flare,
+        sans-serif;
+    font-weight: 400;
+    font-style: normal;
     color: grey;
     padding-top: .5em;
     padding-bottom: 2.5em;
@@ -264,18 +272,28 @@ a:visited {
 }
 
 .customize-content h4 {
-    font: 400 40px 'Gilda Display',
+    /* font: 400 40px 'Gilda Display',
+        serif; */
+    font-size: 3em;
+    font-family: swear-display,
         serif;
+    font-weight: 400;
+    font-style: normal;
     margin-top: -.3em;
     color: #3CA670;
     text-align: center;
 }
 
 .customize-content h5 {
-    font-family: 'Gruppo',
+    /* font-family: 'Gruppo',
         cursive;
-    font-size: 3.5em;
-    margin-top: -.2em;
+    font-size: 3.5em; */
+    font-family: aviano-flare,
+        sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3em;
+    /* margin-top: -.2em; */
     color: #93278F;
     text-align: center;
 }
@@ -318,17 +336,25 @@ a:visited {
 }
 
 .plan-party h4 {
-    font: 400 40px 'Gilda Display',
-        serif;
-    margin-top: -.3em;
+    /* font: 400 40px 'Gilda Display',
+        serif; */
+    font-size: 3em;
+    font-family: swear-display, serif;
+    font-weight: 400;
+    font-style: normal;
     color: #F4EECE;
     text-align: center;
+    margin-bottom: .3em;
 }
 
 .plan-party h5 {
-    font-family: 'Gruppo',
-        cursive;
-    font-size: 3.5em;
+    /* font-family: 'Gruppo',
+        cursive; */
+    font-family: aviano-flare,
+        sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3em;
     margin-top: -.2em;
     color: #F2ACDA;
     text-align: center;
@@ -487,6 +513,7 @@ h1 {
 .location iframe {
     width: 100%;
     border-radius: 5px 20px 5px;
+    box-shadow: 5px 5px 5px rgba(102, 102, 102, 0.7);
 }
 
 .contact-us {
@@ -496,6 +523,7 @@ h1 {
 .find-us img {
     width: 100%;
     border-radius: 5px 20px 5px;
+    box-shadow: 5px 5px 5px rgba(102, 102, 102, 0.7);
 }
 
 .contact-form label {
@@ -631,7 +659,7 @@ h1 {
         font-size: 1.2em;
     }
 
-    /* .services {
+    .services {
         margin: 0 auto;
         width: auto;
         display: grid;
@@ -656,7 +684,7 @@ h1 {
 
     .icecream3 {
         grid-area: seven;
-    } */
+    }
 
 
     /* About Us */
