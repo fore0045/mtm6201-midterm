@@ -234,7 +234,7 @@ body {
 .main-nav {
   position: sticky;
   top: 0px;
-  z-index: 3;
+  z-index: 300;
 }
 
 .logo {
