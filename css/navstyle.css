@@ -234,7 +234,7 @@ body {
 .main-nav {
   position: sticky;
   top: 0px;
-  z-index: 300;
+  z-index: 2000;
 }
 
 .logo {
@@ -245,6 +245,11 @@ body {
   .icons {
     display: none;
     transition: opacity 1s ease-in-out;
+  }
 
+  .main-nav {
+    position: sticky;
+    top: 0px;
+    z-index: 300;
   }
 }

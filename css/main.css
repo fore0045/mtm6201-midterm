@@ -255,20 +255,21 @@ a:visited {
     padding: 1em;
 }
 
+.icecream1 {
+    position: relative;
+}
+
 .icecream1 img {
     width: 100%;
-    position: absolute;
     min-height: 100%;
     object-fit: cover;
 }
 
-/* .icecream2 img {
-    position: absolute;
-} */
 
 .customize-content {
-    position: relative;
+    position: absolute;
     padding-top: 7em;
+    top: 0;
 }
 
 .customize-content h4 {
@@ -322,17 +323,20 @@ a:visited {
     border: 2px rgba(255, 255, 255, 0.5);
 }
 
+.icecream3 {
+    position: relative;
+}
+
 .icecream3 img {
     width: 100%;
     min-height: 100%;
     object-fit: cover;
-    position: absolute;
-
 }
 
 .plan-party {
-    position: relative;
+    position: absolute;
     padding-top: 9em;
+    top: 0;
 }
 
 .plan-party h4 {
@@ -685,11 +689,16 @@ h1 {
     }
 
     .icecream4 {
-        grid-area: seven;
+        grid-area: eight;
     }
 
     .icecream3 {
         grid-area: seven;
+    }
+
+    .icecream2,
+    .icecream4 {
+        height: 100%;
     }
 
 
