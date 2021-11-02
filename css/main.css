@@ -381,18 +381,27 @@ a:visited {
     font-family: 'Poppins',
         sans-serif;
     font-size: 1em;
+    padding: 3em;
+}
 
-
+.footer p {
+    padding-top: 1em;
 }
 
 .footer {
     display: flex;
 }
 
-.socialmediaicons {
-    flex-grow: 2;
-    align-content: center;
+.footer img {
+    max-width: 40px;
+    margin-left: 1em;
 }
+
+.socialmediaicons {
+    text-align: center;
+}
+
+
 
 /* About Us Styles */
 
@@ -608,7 +617,7 @@ h1 {
     }
 
     .our-moods-info {
-        max-width: 1400px;
+        max-width: 1200px;
         margin: 0 auto;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
