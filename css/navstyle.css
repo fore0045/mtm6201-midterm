@@ -226,9 +226,14 @@ body {
 
 }
 
-.icons img {
-  width: 30px;
+.icons i {
+  font-size: 30px;
+  color: #3CA670;
   margin: .5em;
+}
+
+.icons-nav i {
+  margin: 10px;
 }
 
 .main-nav {
