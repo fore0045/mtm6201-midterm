@@ -232,8 +232,8 @@ body {
   margin: .5em;
 }
 
-.icons-nav i {
-  margin: 10px;
+.icons-list i {
+  margin: .5em;
 }
 
 .main-nav {
@@ -258,5 +258,18 @@ body {
     position: sticky;
     top: 0px;
     z-index: 900;
+  }
+
+  .icons-list i {
+    margin: .5em;
+  }
+
+
+  .main-nav {
+    position: fixed;
+    top: 0px;
+    z-index: 5;
+    width: 100%;
+
   }
 }

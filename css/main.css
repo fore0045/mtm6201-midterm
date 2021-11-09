@@ -411,19 +411,26 @@ a:visited {
 /* About Us Styles */
 
 .banner {
+    margin-top: 103px;
     height: 300px;
     background: url(../images/aboutusbanner.png) no-repeat center center;
     background-size: cover;
 }
 
 h1 {
-    background: #3CA670;
+
     font: 500 40px 'Gilda Display',
         serif;
     color: white;
     text-align: center;
-    padding-top: 1em;
-    padding-bottom: 1em;
+    padding-top: 4em;
+}
+
+.banner-info {
+    /* position: absolute; */
+    background: rgba(60, 166, 112, 0.5);
+    width: 100%;
+    height: 100%;
 }
 
 .aboutus {
@@ -721,6 +728,7 @@ h1 {
     h1 {
         font: 500 60px 'Gilda Display',
             serif;
+        padding-top: 2em;
     }
 
     .aboutusinfo {
@@ -806,6 +814,14 @@ h1 {
 
     .store {
         grid-area: store;
+    }
+
+    .our-store {
+        max-height: 450px;
+        overflow: hidden;
+        border-radius: 5px 20px 5px;
+        box-shadow: 5px 5px 5px rgb(102, 102, 102);
+
     }
 
     .location {
