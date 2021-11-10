@@ -722,6 +722,9 @@ h1 {
         height: 100%;
     }
 
+    .services {
+        padding: 0;
+    }
 
     /* About Us */
 
