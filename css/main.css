@@ -405,8 +405,7 @@ a:visited {
 }
 
 
-
-/* About Us Styles */
+/*------------------------ABOUT US PAGE STYLES------------------- */
 
 .banner {
     margin-top: 103px;
@@ -418,12 +417,12 @@ a:visited {
 h1 {
 
     font-family: var(--font-heading);
-    font-size: 3em;
+    font-size: 5em;
     font-weight: 500;
 
     color: white;
     text-align: center;
-    padding-top: 4em;
+    padding-top: 2em;
 }
 
 .banner-info {
@@ -450,6 +449,7 @@ h1 {
 .philosophy {
     background: rgba(244, 238, 206, .5);
     padding: 1em;
+    padding-bottom: 3em;
 }
 
 .philosophy h2 {
@@ -470,7 +470,9 @@ h1 {
     padding-left: 1em;
 }
 
-.philosophy img {
+.purpose-image,
+.ecommerce-image,
+.innovation-image {
     display: block;
     margin-bottom: 0;
     width: 100%;
@@ -485,20 +487,58 @@ h1 {
     margin-bottom: 1em;
 }
 
-/* Contact Us Styles  */
+.purpose-image {
+    background: url(../images/purpose.jpeg) no-repeat;
+    background-size: cover;
+}
+
+.innovation-image {
+    background: url(../images/innovation.jpeg) no-repeat;
+    background-size: cover;
+}
+
+.ecommerce-image {
+    background: url(../images/ecommerce.jpeg) no-repeat;
+    background-size: cover;
+}
+
+/*------------------------CONTACT US PAGE STYLES------------------- */
 
 .contact-us {
     background: rgba(244, 238, 206, .5);
 }
 
+.contact-us h1 {
+    font-family: var(--font-heading);
+    font-weight: 500;
+    font-size: 5em;
+    color: #93D9A3;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    margin-top: 103px;
+    background: #A64484;
+
+
+}
+
+.contact-us-banner {
+    margin-top: -1em;
+    margin-left: -1em;
+    margin-right: -1em;
+}
+
 .contact-us h2 {
     font-family: var(--font-heading);
     font-weight: 600;
-    font-size: 2em;
+    font-size: 3em;
     color: var(--purple);
     padding-top: 1em;
-    padding-bottom: .5em;
+    padding-bottom: 1em;
 
+}
+
+.message {
+    padding-bottom: 4em;
 }
 
 .store li {
@@ -566,7 +606,7 @@ h1 {
     margin-bottom: 1em;
     height: 50px;
     margin-top: 0.8em;
-    border: 2px solid var(pink);
+    border: 2px solid var(--pink);
     font-family: var(--font-text);
     font-size: 1.5em;
     font-weight: 300;
@@ -610,6 +650,44 @@ h1 {
 /* -------------------------------------------------------- */
 /*------------------------TABLET  STYLES------------------- */
 /* -------------------------------------------------------- */
+
+
+@media screen and (min-width: 530px) {
+
+    /*------------------------ABOUT US STYLES------------------- */
+
+    .find-us {
+        max-width: 1400px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, auto);
+        grid-template-areas:
+            "store location"
+            "hours hours";
+        gap: 2em;
+    }
+
+    .store {
+        grid-area: store;
+    }
+
+    .our-store {
+        max-height: 450px;
+        overflow: hidden;
+        border-radius: 5px 20px 5px;
+        box-shadow: 5px 5px 5px rgb(102, 102, 102);
+
+    }
+
+    .location {
+        grid-area: location;
+    }
+
+    .hours {
+        grid-area: hours;
+    }
+}
 
 @media screen and (min-width: 760px) {
 
@@ -734,12 +812,16 @@ h1 {
         padding: 0;
     }
 
-    /* About Us */
+    /*------------------------ABOUT US STYLES------------------- */
+
 
     h1 {
+
         font-family: var(--font-heading);
-        font-size: 4em;
+        font-size: 5em;
         font-weight: 500;
+        color: white;
+        text-align: center;
         padding-top: 2em;
     }
 
@@ -778,32 +860,34 @@ h1 {
         max-width: 1400px;
         margin: 0 auto;
         padding: 0;
+        padding-bottom: 4em;
         display: grid;
         grid-template-columns: repeat(2, auto);
-        grid-template-rows: repeat(3, auto);
+        grid-template-rows: repeat(3, 1fr);
         grid-template-areas:
             "a b"
             "c d"
             "e f";
     }
 
-    .purpose-img {
+    .purpose-image {
         grid-area: a;
     }
 
     .purpose {
         grid-area: b;
+        padding-bottom: 6em;
     }
 
     .innovation {
         grid-area: c;
     }
 
-    .innovation-img {
+    .innovation-image {
         grid-area: d;
     }
 
-    .ecommerce-img {
+    .ecommerce-image {
         grid-area: e;
     }
 
@@ -811,39 +895,7 @@ h1 {
         grid-area: f;
     }
 
-    /* Contact Us styles */
 
-    .find-us {
-        max-width: 1400px;
-        margin: 0 auto;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, auto);
-        grid-template-areas:
-            "store location"
-            "hours hours";
-        gap: 2em;
-    }
-
-    .store {
-        grid-area: store;
-    }
-
-    .our-store {
-        max-height: 450px;
-        overflow: hidden;
-        border-radius: 5px 20px 5px;
-        box-shadow: 5px 5px 5px rgb(102, 102, 102);
-
-    }
-
-    .location {
-        grid-area: location;
-    }
-
-    .hours {
-        grid-area: hours;
-    }
 }
 
 /* -------------------------------------------------------- */
@@ -902,6 +954,10 @@ h1 {
         font-size: 2.3em;
     }
 
-
+    .contact-us-banner {
+        margin-top: -1em;
+        margin-left: -1em;
+        margin-right: -1em;
+    }
 
 }
