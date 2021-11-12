@@ -149,7 +149,9 @@ table {
     --pink: #f9bee4;
 }
 
-/* Mobile first */
+/* -------------------------------------------------------- */
+/*------------------------MOBILE  STYLES------------------- */
+/* -------------------------------------------------------- */
 
 html {
     font-family: var(--font-text);
@@ -276,7 +278,7 @@ a:visited {
 
 .customize-content h4 {
 
-    font-size: 3em;
+    font-size: 4em;
     font-family: var(--font-heading);
     font-weight: 400;
     font-style: normal;
@@ -296,11 +298,13 @@ a:visited {
 }
 
 .customize-content p {
-    font-weight: 300;
-    font-size: 2em;
+    font-weight: 400;
+    font-size: 1.5em;
     font-family: var(--font-text);
     text-align: center;
-    color: grey;
+    color: var(--purple);
+    padding-bottom: 1em;
+    padding-top: 1em;
 }
 
 .btn-light {
@@ -309,14 +313,14 @@ a:visited {
     color: #fff;
     text-decoration: none;
     position: relative;
-    background: rgba(242, 99, 192, 0.5);
+    background: rgba(242, 99, 192, 0.8);
     font-family: var(--font-text);
     letter-spacing: 0.4em;
     text-align: center;
     text-indent: 2px;
     font-size: 1em;
     align-items: center;
-    border: 2px rgba(255, 255, 255, 0.5);
+    border: 3px rgba(255, 255, 255, 0.5);
 }
 
 .icecream3 {
@@ -339,7 +343,7 @@ a:visited {
 
 .plan-party h4 {
 
-    font-size: 3em;
+    font-size: 4em;
     font-family: var(--font-heading);
     font-weight: 400;
     font-style: normal;
@@ -361,11 +365,13 @@ a:visited {
 
 .plan-party p {
 
-    font-weight: 300;
-    font-size: 2em;
+    font-weight: 400;
+    font-size: 1.5em;
     font-family: var(--font-text);
     text-align: center;
     color: white;
+    padding-top: 1em;
+    padding-bottom: 1em;
 }
 
 .services img {
@@ -602,18 +608,19 @@ h1 {
 }
 
 /* -------------------------------------------------------- */
-/*------------------------DESKTOP STYLES------------------- */
+/*------------------------TABLET  STYLES------------------- */
 /* -------------------------------------------------------- */
 
 @media screen and (min-width: 760px) {
 
 
     .our-moods h2 {
-        font-size: 4em;
+        font-size: 3em;
+        padding-bottom: 0;
     }
 
     .our-moods h3 {
-        font-size: 3em;
+        font-size: 2em;
     }
 
     .our-moods-info {
@@ -646,44 +653,49 @@ h1 {
 
     .customize-content h4 {
         font-weight: 400;
-        font-size: 4em;
+        font-size: 3em;
         font-family: var(--font-heading);
 
     }
 
     .customize-content h5 {
-        font-size: 4.5em;
+        font-size: 2.5em;
 
     }
 
     .customize-content p {
         font-family: var(--font-text);
         font-weight: 300;
-        font-size: 2em;
+        font-size: 1.5em;
 
     }
 
     .plan-party h4 {
         font-family: var(--font-heading);
         font-weight: 400;
-        font: 4em;
+        font-size: 3em;
 
     }
 
     .plan-party h5 {
-        font-size: 4.5em;
+        font-size: 2.5em;
+        margin: none;
     }
 
     .plan-party p {
-        font-family: var(--font-heading);
+        font-family: var(--font-text);
         font-weight: 300;
-        font-size: 2em;
+        font-size: 1.5em;
 
+    }
+
+    .plan-party {
+        margin-top: -2.5em;
     }
 
     .btn-light {
         padding: 13px 20px;
-        font-size: 1.2em;
+        font-size: 1em;
     }
 
     .services {
@@ -832,4 +844,64 @@ h1 {
     .hours {
         grid-area: hours;
     }
+}
+
+/* -------------------------------------------------------- */
+/*------------------------DESKTOP STYLES------------------- */
+/* -------------------------------------------------------- */
+
+@media screen and (min-width: 992px) {
+    .customize-content h4 {
+        font-weight: 400;
+        font-size: 4.5em;
+        font-family: var(--font-heading);
+
+    }
+
+    .customize-content h5 {
+        font-size: 3.5em;
+        margin-top: .3em;
+    }
+
+    .customize-content p {
+        font-family: var(--font-text);
+        font-weight: 300;
+        font-size: 2em;
+
+    }
+
+    .plan-party h4 {
+        font-family: var(--font-heading);
+        font-weight: 400;
+        font-size: 4.5em;
+
+    }
+
+    .plan-party h5 {
+        font-size: 3.5em;
+        margin: none;
+    }
+
+    .plan-party p {
+        font-family: var(--font-text);
+        font-weight: 300;
+        font-size: 2em;
+        margin-top: -.6em;
+    }
+
+    .plan-party {
+        margin-top: -3em;
+    }
+
+    .btn-light {
+        padding: 13px 20px;
+        font-size: 1.2em;
+    }
+
+    .our-moods h3 {
+        font-size: 2.3em;
+    }
+
+
+
 }

@@ -1,4 +1,4 @@
-/* CORE STYLES */
+/* Navigation Core Styles */
 :root {
   --primary-color: #FFE1DC;
   --overlay-color: rgba(60, 166, 112, 0.85);
@@ -41,7 +41,7 @@ body {
   height: 100%;
 }
 
-/* MENU STYLES */
+/* Menu Styles */
 
 .menu-wrap {
   position: fixed;
@@ -194,6 +194,8 @@ body {
 
 }
 
+/* Icons styling */
+
 .icons i {
   font-size: 30px;
   color: #3CA670;
@@ -217,6 +219,8 @@ body {
 }
 
 @media screen and (max-width: 630px) {
+
+  /* Removing icons and moving them to the navigation */
   .icons {
     display: none;
     transition: opacity 1s ease-in-out;

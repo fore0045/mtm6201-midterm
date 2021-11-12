@@ -3,6 +3,7 @@ body {
   letter-spacing: 0.05em;
 }
 
+/* Styles for slideshow button */
 .btn {
   display: inline-block;
   padding: 13px 20px;
@@ -20,6 +21,7 @@ body {
 
 }
 
+/* Slide show button animation */
 .btn::before {
   content: "";
   display: block;
@@ -84,6 +86,8 @@ body {
   height: 100%;
   z-index: 1;
 }
+
+/* slide styling and animation */
 
 .slideshow .slide {
   display: none;
@@ -180,6 +184,8 @@ body {
 .slideshow .slide .btn::before {
   background: #fff;
 }
+
+/* Slide show pagination */
 
 .slideshow .pagination {
   position: absolute;
@@ -291,6 +297,8 @@ body {
                   TABLET STYLES------------------------------------------*/
 
 @media screen and (max-width: 760px) {
+
+  /* Slyles for caption box growing */
   .caption {
     margin-left: 4em;
   }
