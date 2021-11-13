@@ -253,6 +253,19 @@ a:visited {
     text-align: center;
 }
 
+.divorce:hover {
+    transform: scale(1.05);
+}
+
+
+.babyshower:hover {
+    transform: scale(1.05);
+}
+
+.belly:hover {
+    transform: scale(1.05);
+}
+
 .services {
     padding: 1em;
 }
@@ -423,7 +436,10 @@ h1 {
     color: white;
     text-align: center;
     padding-top: 2em;
+    animation: heartBeat;
 }
+
+
 
 .banner-info {
 
@@ -517,8 +533,6 @@ h1 {
     padding-bottom: 2em;
     margin-top: 103px;
     background: #A64484;
-
-
 }
 
 .contact-us-banner {
@@ -537,9 +551,7 @@ h1 {
 
 }
 
-.message {
-    padding-bottom: 4em;
-}
+
 
 .store li {
     font-family: var(--font-text);
@@ -647,6 +659,19 @@ h1 {
 
 }
 
+.divorce:hover {
+    transform: scale(1.1);
+}
+
+
+.babyshower:hover {
+    transform: scale(1.1);
+}
+
+.belly:hover {
+    transform: scale(1.1);
+}
+
 /* -------------------------------------------------------- */
 /*------------------------TABLET  STYLES------------------- */
 /* -------------------------------------------------------- */
@@ -661,10 +686,11 @@ h1 {
         margin: 0 auto;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, auto);
+        grid-template-rows: repeat(3, auto);
         grid-template-areas:
             "store location"
-            "hours hours";
+            "hours hours"
+            "message message";
         gap: 2em;
     }
 
@@ -686,6 +712,10 @@ h1 {
 
     .hours {
         grid-area: hours;
+    }
+
+    .message {
+        grid-area: message;
     }
 }
 
@@ -728,6 +758,7 @@ h1 {
     .belly {
         grid-area: four;
     }
+
 
     .customize-content h4 {
         font-weight: 400;
@@ -774,6 +805,10 @@ h1 {
     .btn-light {
         padding: 13px 20px;
         font-size: 1em;
+    }
+
+    .btn-light:hover {
+        background: var(--purple);
     }
 
     .services {
@@ -958,6 +993,11 @@ h1 {
         margin-top: -1em;
         margin-left: -1em;
         margin-right: -1em;
+    }
+
+    .message {
+        padding-bottom: 4em;
+
     }
 
 }

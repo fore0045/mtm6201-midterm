@@ -1,4 +1,4 @@
-var slideshowDuration = 200000;
+var slideshowDuration = 5000;
 var slideshow = $('.main-content .slideshow');
 
 function slideshowSwitch(slideshow, index, auto) {
