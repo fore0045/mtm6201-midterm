@@ -137,6 +137,8 @@ table {
 /* -------------------------------------------------------------
                             CUSTOM STYLES                       
 ---------------------------------------------------------------*/
+
+/* Including custom properties */
 :root {
     --font-heading: swear-display,
         serif;
@@ -253,6 +255,7 @@ a:visited {
     text-align: center;
 }
 
+/* Hover effect on Our Moods section */
 .divorce:hover {
     transform: scale(1.05);
 }
@@ -265,6 +268,8 @@ a:visited {
 .belly:hover {
     transform: scale(1.05);
 }
+
+/* Services section styles */
 
 .services {
     padding: 1em;
@@ -391,6 +396,8 @@ a:visited {
     width: 100%;
 }
 
+/* Footer styles */
+
 .site-footer {
     background-color: #EDFDE1;
     color: #A64484;
@@ -426,6 +433,8 @@ a:visited {
     background: url(../images/aboutusbanner.png) no-repeat center center;
     background-size: cover;
 }
+
+/* Heading styles including animation */
 
 h1 {
 
@@ -659,23 +668,13 @@ h1 {
 
 }
 
-.divorce:hover {
-    transform: scale(1.1);
-}
 
-
-.babyshower:hover {
-    transform: scale(1.1);
-}
-
-.belly:hover {
-    transform: scale(1.1);
-}
 
 /* -------------------------------------------------------- */
 /*------------------------TABLET  STYLES------------------- */
 /* -------------------------------------------------------- */
 
+/* Adds media query for about us page to show grid */
 
 @media screen and (min-width: 530px) {
 

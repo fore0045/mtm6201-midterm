@@ -225,7 +225,7 @@ body {
 
 @media screen and (max-width: 630px) {
 
-  /* Removing icons and moving them to the navigation */
+  /* Removing icons and moving them to the navigation when responsive */
   .icons {
     display: none;
     transition: opacity 1s ease-in-out;
