@@ -149,6 +149,8 @@ table {
     --purple: #93278F;
     --green: #3CA670;
     --pink: #f9bee4;
+    --primary-color: #FFE1DC;
+    --overlay-color: rgba(60, 166, 112, 0.85);
 }
 
 /* -------------------------------------------------------- */
@@ -501,6 +503,7 @@ h1 {
     display: block;
     margin-bottom: 0;
     width: 100%;
+    min-height: 25em;
 }
 
 .purpose,
@@ -678,7 +681,7 @@ h1 {
 
 @media screen and (min-width: 530px) {
 
-    /*------------------------ABOUT US STYLES------------------- */
+    /*------------------------CONTACT US STYLES------------------- */
 
     .find-us {
         max-width: 1400px;
@@ -787,7 +790,6 @@ h1 {
 
     .plan-party h5 {
         font-size: 2.5em;
-        margin: none;
     }
 
     .plan-party p {
@@ -965,7 +967,6 @@ h1 {
 
     .plan-party h5 {
         font-size: 3.5em;
-        margin: none;
     }
 
     .plan-party p {
@@ -996,7 +997,10 @@ h1 {
 
     .message {
         padding-bottom: 4em;
+    }
 
+    .message h2 {
+        text-align: center;
     }
 
 }
