@@ -280,14 +280,17 @@
             <div class="our-moods-info">
                 <h2>Our MOODS</h2>
                 <div class="divorce">
+                    <!-- This image is only 418x417px and would be only optimize for viewport 320px with 1x resolution which I consider no needed -->
                     <img src="./images/divorceparty.jpg" alt="divorceparty" title="©Polska - pexels.com">
                     <h3>DIVORCE PARTY</h3>
                 </div>
                 <div class="babyshower">
+                    <!-- This image is only 419x414px and would be only optimize for viewport 320px with 1x resolution which I consider no needed -->
                     <img src="./images/babyshower.jpg" alt="babyshower" title="©calebemirandafotografia - pexels.com">
                     <h3>EXCITED BABY SHOWER</h3>
                 </div>
                 <div class="belly">
+                    <!-- This image is only 419x415px and would be only optimize for viewport 320px with 1x resolution which I consider no needed -->
                     <img src="./images/byebyebelly.jpg" alt="byebyebelly" title="©by_annatis - pexels.com">
                     <h3>BYE BYE BELLY</h3>
                 </div>
@@ -297,7 +300,14 @@
         <!-- Opens Services Section -->
         <section class="services">
             <div class="icecream1">
-                <img src="./images/icecream1.jpg" alt="customizeyourmood" title="©lumberjack_george - pexels.com">
+                <picture>
+                    <!-- Optimizes small image -->
+                    <source srcset="images/icecream1-480_x_616.jpg,
+                    images/icecream1.jpg 2x" media="(min-width: 628px)">
+                    <img src="images/icecream1-320_x_411.jpg" alt="customizeyourmood"
+                        title="©lumberjack_george - pexels.com">
+                    <!-- <img src="./images/icecream1.jpg" alt="customizeyourmood" title="©lumberjack_george - pexels.com"> -->
+                </picture>
                 <div class="customize-content">
                     <h4>customize</h4>
                     <h4>your</h4>
@@ -306,9 +316,22 @@
                     <button type="submit" class="btn-light">ORDER</button>
                 </div>
             </div>
-            <img src="./images/icecream2.jpg" alt="vanillaicecream" class="icecream2" title="©sombenchea - pexels.com">
+            <picture>
+                <!-- Optimizes small image -->
+                <source srcset="images/icecream2-480_x_480.jpg,
+                images/icecream2.jpg 2x" media="(min-width: 522px)">
+                <img src="images/icecream2-320_x_320.jpg" alt="vanillaicecream" class="icecream2"
+                    title="©sombenchea - pexels.com">
+                <!-- <img src="./images/icecream2.jpg" alt="vanillaicecream" class="icecream2" title="©sombenchea - pexels.com"> -->
+            </picture>
             <div class="icecream3">
-                <img src="./images/icecream3.jpg" alt="planparty" title="©pexelsru - pexels.com">
+                <picture>
+                    <!-- Optimizes small image -->
+                    <source srcset="images/icecream3-480_x_617.jpg,
+                    images/icecream3.jpg 2x" media="(min-width: 627px)">
+                    <img src="images/icecream3-320_x_411.jpg" alt="planparty" title="©pexelsru - pexels.com">
+                    <!-- <img src="./images/icecream3.jpg" alt="planparty" title="©pexelsru - pexels.com"> -->
+                </picture>
                 <div class="plan-party">
                     <h4>plan your</h4>
                     <h5>PARTY</h5>
@@ -317,8 +340,15 @@
                     <button type="submit" class="btn-light">ORDER</button>
                 </div>
             </div>
-            <img src="./images/icecream4.jpg" alt="strawberryicecream" class="icecream4"
-                title="©Lexingotn Ky - pexels.com">
+            <picture>
+                <!-- Optimizes small image -->
+                <source srcset="images/icecream4-480_x_479.jpg,
+                images/icecream4.jpg 2x" media="(min-width: 522px)">
+                <img src="image/icecream4-320_x_319.jpg" alt="strawberryicecream" class="icecream4"
+                    title="©Lexingotn Ky - pexels.com">
+                <!-- <img src="./images/icecream4.jpg" alt="strawberryicecream" class="icecream4"
+                title="©Lexingotn Ky - pexels.com"> -->
+            </picture>
         </section>
         <!-- Closes Services Section -->
     </main>
